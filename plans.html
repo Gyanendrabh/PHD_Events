@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Plans | PHD Events</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="header"></div>
+    <section class="recommended-plans">
+        <div class="section-header">
+          <h2>Recommended Plans</h2>
+          <p>PHD Events offers all-inclusive wedding plans that take the hassle out of planning. Each package combines services like elegant tents, exquisite catering, stunning photography, and dazzling fireworks, ensuring a seamless and unforgettable celebration. Choose a plan and let us handle the details while you enjoy your special day!</p>
+        </div>
+        <div class="plans-container">
+            <div class="plan">
+                <img src="Pinterest.jpeg" alt="The Deluxe One">
+                <h3>Super Plan</h3>
+                <p>captures the essence of your love story through stunning, candid moments. We tailor each session to reflect your unique relationship, creating beautiful memories you’ll cherish forever.</p>
+                <button class="cta-btn">Details</button>
+            </div>
+            <div class="plan">
+                <img src="tent and decor.jpeg" alt="The Deluxe One">
+                <h3>The Deluxe One</h3>
+                <p>creates stunning environments tailored to your wedding vision with elegant tents and personalized decorations, we ensure a magical atmosphere that leaves a lasting impression on you and your guests.</p>
+                <button class="cta-btn">Details</button>
+            </div>
+            <div class="plan">
+                <img src="catering.jpeg" alt="Premium">
+                <h3>Premium</h3>
+                <p>offers customized menus featuring a diverse range of cuisines to suit your taste and wedding theme. From elegant buffets to exquisite plated dinners, A delightful dining experience that will impress your guests.</p>
+                <button class="cta-btn">Details</button>
+            </div>
+            <div class="plan">
+                <img src="fireworks.jpeg" alt="Diamond">
+                <h3>Diamond</h3>
+                <p>provides a spectacular display to elevate your wedding celebration. With customized shows designed to match your theme, we create magical moments that will leave a lasting impression on you and your guests.</p>
+                <button class="cta-btn">Details</button>
+            </div>
+        </div>
+    </section>
+    
+    <div class="footer">
+        <div class="footer-content">
+            <p>Monday – Friday, 7am – 4pm</p>
+            <p>Shree Shyam Bhawan, Naya Bass, Churu</p>
+            <p>+91-9828787075</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/gyanendra_bhardwaj910/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:bhardwajgyanendra30@gmail.com"><i class="fas fa-envelope"></i></a> 
+            </div>
+        </div>
+     </div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
